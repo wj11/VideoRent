@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>videorent</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function Wopen(){
+            window.open('','_blank')
+        }
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="head"><h1>业 务 受 理 子 系 统</h1></div>
+    <div class="head2 "><a href="#">返回</a></div>
+    <div class="box">
+        <div class="boxTop">
+            <input type="button" value="搜索" class="search_btn fl"/>
+            <input type="text" name="search" value="影碟名字" class="search_text fr"/>
+        </div>
+        <hr/>
+        <div class="boxMiddle">
+            <span class="rent_spn fl">借阅记录：</span>
+            <input type="button" value="租借" class="button1 fr" onclick="Wopen()"/>
+        </div>
+        <div class="boxBottom" align="center">
+            <table  width="700" border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                   <tr><td>影碟编号</td><td>名称</td><td>用户</td><td>租借日期</td><td>应归还日期</td><td>实际归还日期</td>
+                       <td>编辑</td></tr>
+                </thead>
+                <tbody>
+                  <tr><td>影碟编号</td><td>名称</td><td>用户</td><td>租借日期</td><td>应归还日期</td><td>实际归还日期</td>
+                      <td><a href="StudentEdit.ashx?Action=Edit&Id=$student.Id">归还</a></td></tr>
+                  <tr><td>影碟编号</td><td>名称</td><td>用户</td><td>租借日期</td><td>应归还日期</td><td>实际归还日期</td>
+                      <td><a href="StudentEdit.ashx?Action=Edit&Id=$student.Id">归还</a></td></tr>
+                  <tr><td>影碟编号</td><td>名称</td><td>用户</td><td>租借日期</td><td>应归还日期</td><td>实际归还日期</td>
+                      <td><a href="StudentEdit.ashx?Action=Edit&Id=$student.Id">归还</a></td></tr>
+            </table>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</div>
+</body>
+</html>
