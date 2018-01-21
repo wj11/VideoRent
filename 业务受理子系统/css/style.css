@@ -1,24 +1,45 @@
-body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd, input {margin: 0;padding: 0;
-}
-body { font-size: 12px; font-family:"Microsoft YaHei","微软雅黑";}
+﻿/*头部*/
+#header{width: 100%;height: 80px;margin: auto;position: relative;background-color: #3fa2d4}
+#top{height: 70px;width: 100%;}
+#top-block-left{float: left;margin: 25px}
+#top-block-left p{padding: 3px 0 0 10px;font-size: 30px;font-weight: bold;color: #DDD;text-shadow: 0 1px 1px #111;float: right}
+#top-toolbox{float: right;margin: 25px}
+#top-toolbox li{float: left}
+#top-toolbox a{background-position:left;text-decoration: none;font-size: 30px;color: #DDD;height: 60px;font-weight: bold;padding-left: 24px;margin-left: 10px}
+#top-toolbox a:hover{cursor: pointer}
 
-.fl { float: left;}
-.fr { float: right;}
-input,select,textarea{outline:none;/*border:none;*/}
+/*菜单栏*/
+#menu{background-color:#3fa2d4; width: 100%;height: 40px;}
+ul.topnav{list-style: none;float: left;width: 100%;font: 0.8em;background-color:#3fa2d4;}
+ul.topnav li{float: left;margin: auto; padding: 0 15px 0 0;position: relative;top:-20px;}
+ul.topnav li.right{float: left;}
+ul.topnav li a{line-height: 2.6em;padding: 0 6px 0 28px;color: #EEE;font-size: 1.2em;display: block;text-decoration: none;float: left;background-position: 6px 12px;background-repeat: no-repeat;font-weight: bold;text-shadow: 0 1px 1px #111;}
+form {float: left;background-color: #FFF;padding: 1px}
+.search-input-button{border: 0;background-image: url("../img/search_ico.png");width: 29px;height: 29px;float: left;cursor: pointer;}
+.search-input-text{border: 0;float: left;height: 25px;line-height: 25px;outline: none;width: 350px;}
+.search-box{position: absolute;top: 27px;right: 240px;}
 
-/*rent.html*/
-.head{ width: 1000px; height: 100px; background-color:#1D7AD9;line-height:100px;margin:0 auto;
-        font-size:18px;text-align:center;
-}
-.head2{ width: 800px; height: 30px;line-height:30px;margin:0 auto;text-align:right;
-    font-size:18px}
-.bottom{
-    width: 1000px; height: 100px; background-color:#F7F7F7;
-}
+.navBox{height:40px; background-color:#1369C0; color:#FFF;}
+.nav{line-height:35px;}
+.nav li{float:left;}
+.nav a{height:35px; display:inline-block; padding:0 35px; color:#FFF;}
+.navBox ul li:hover a {background: #4593FD;}
+
+/*底部*/
+.footer{text-align:center; background-color:#3fa2d4; line-height:24px; padding:30px 0;}
+.footer i{font-style:normal; margin:0 5px; }
+.footer a{color:#000;}
+.footer a:hover{color:#F60;}
+.web{padding-top:25px;}
+.web img{margin:0 12px;}
+.hr_25{height:25px;}
+.hr_45{height:45px;}
+.hr_7{height:7px; overflow:hidden;}
+.hr_15{height:15px; overflow:hidden;}
+
 /*中间部分*/
-.box {
-    width: 1000px; height: 700px; margin:0 auto;  background-color:lightgrey;
-    /*border:red 1px solid;*/
+.box1 {
+    width: 100%; height: 450px;
 }
 
 .boxTop {
@@ -40,6 +61,11 @@ font-size:15px;}
 .boxBottom table thead td{font-weight:bold;}
 .boxBottom table td{ text-align:center;height:40px; border-left:1.5px solid blue;border-top:1.5px solid blue}
 /*rent1*/
+/*中间部分*/
+.box2 {
+    width: 90%; height: 500px;
+    /*border:red 1px solid;*/
+}
 .left{
     margin-top:100px;
     width:40%;

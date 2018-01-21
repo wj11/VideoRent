@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>videorent</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
         function Wopen(){
             window.open('','_blank')
@@ -12,9 +13,51 @@
 </head>
 <body>
 <div class="content">
-    <div class="head"><h1>业 务 受 理 子 系 统</h1></div>
-    <div class="head2 "><a href="#">返回</a></div>
-    <div class="box">
+    <!-- Container -->
+    <div id="container">
+        <!-- Header -->
+        <div id="header">
+            <div id="top">
+                <div id="top-block-left">
+                    <a href="index.html"><img src="../img/logo.png"></a>
+                    <p><span>影碟出租</span></p>
+                    <p><span>Video Rental</span></p>
+                </div>
+                <ul id="top-toolbox">
+                    <li><a href="personCenter.html">姓名</a></li>
+                    <li><a href="login.html">退出</a> </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- Top Menu -->
+        <div id="menu">
+            <div class="navBox">
+                <ul class="nav fl">
+                    <li><a href="推荐1.html">最热</a></li>
+                    <li><a href="推荐1.html">最新</a></li>
+                    <li><a href="推荐2.html">喜剧</a></li>
+                    <li><a href="推荐2.html">爱情</a></li>
+                    <li><a href="推荐2.html">犯罪</a></li>
+                    <li><a href="推荐2.html">惊悚</a></li>
+                    <li><a href="推荐2.html">冒险</a></li>
+                    <li><a href="推荐2.html">动作</a></li>
+                </ul>
+            </div>
+
+            <div class="search-box">
+                <form class="search-form" action="https://cn.bing.com/search" target="_blank" id="search-form">
+                    <input type="text" class="search-input-text" name="q" id="search_input" autocomplete="off" />
+                    <input type="submit" class="search-input-button" value="" />
+                </form>
+            </div>
+        </div>
+        <!-- End Menu -->
+    </div>
+    <!-- End Header -->
+    <div class="clear"></div>
+
+    <div class="box1">
         <div class="boxTop">
             <input type="button" value="搜索" class="search_btn fl"/>
             <input type="text" name="search" value="影碟名字" class="search_text fr"/>
@@ -39,8 +82,10 @@
                       <td><a href="StudentEdit.ashx?Action=Edit&Id=$student.Id">归还</a></td></tr>
             </table>
         </div>
-        <div class="bottom"></div>
     </div>
+        <div class="footer">
+            <p>欢迎来到影碟租借系统<i>|</i>客服热线：400-675-1234</p>
+        </div>
 </div>
 </body>
 </html>
